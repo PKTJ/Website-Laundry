@@ -1,0 +1,15 @@
+.html{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.4px;
+}
+.navbar-custom {
+    background-color: #8be3e3;
+}
+.btn-custom {
+    background-color: #ffc107 !important; 
+    color: black !important;
+    border: none !important;
+}
+.btn-custom:hover {
+     background-color: #e0a800 !important;
+}
