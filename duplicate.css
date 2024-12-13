@@ -1,0 +1,491 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.4px;
+}
+.navbar-custom {
+    background-color: #8be3e3;
+}
+.btn-custom {
+    background-color: #ffc107 !important; 
+    color: black !important;
+    border: none !important;
+    
+}
+.btn-custom:hover {
+     background-color: #e0a800 !important;
+}
+
+.width-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1917.377px;
+    height: 731px;
+    width: 100%;
+    height: 100vh;
+
+    flex-shrink: 0;
+    /* background: linear-gradient(to bottom, #55F196, #369386, #0693C9); */
+    background: linear-gradient(#369386, #55F196, #0693C9);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 2; 
+}
+
+.text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+
+.left-woman {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    top:295px;
+    
+} 
+
+.right-woman {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    top:295px;
+}
+
+
+
+/* .left-woman {
+    width: 420px;
+    height: 524px;
+    flex-shrink: 0;
+
+}
+
+.right-woman {
+    width: 476px;
+    height: 524px;
+    flex-shrink: 0;
+
+} */
+
+.button1 {
+    border-radius: 35px;
+    color: black;
+    font-weight: bold; 
+    text-align: center;
+    background-color: #e0a800;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #e0a800; 
+    
+}
+
+.button2 {
+    border-radius: 35px;
+    color: white; /* Text color */
+    background-color: transparent;
+    border: 2px solid #e0a800; 
+    padding: 20px 20px 20px 20px; 
+    font-weight: bold; 
+    text-align: center;
+}
+
+/* About */
+
+.about h1 {
+    text-align: center;
+    color: #31386F;
+    font-size: 45px;
+    font-weight: 700;
+    width: 939px;
+    height: 110px;
+    flex-shrink: 0;
+    
+
+}
+
+
+.rectangle-kiri {
+    display: grid;
+    width: 381px;
+    height: 563px;
+    flex-shrink: 0;
+    box-sizing : border-box;
+    background-color: #F3F6FD;
+    position: absolute;
+    top: 1250px;
+    right: 1300px;
+    bottom: 3222px;
+    left: 239px;
+    
+  }
+
+.rectangle-tengah {
+    width: 381px;
+    height: 563px;
+    flex-shrink: 0;
+    background-color: #F3F6FD;
+    position: absolute; /* Bisa absolute atau relative */
+     top: 1250px;
+     left: 720px;
+    right: 764px;
+    bottom: 3222px;
+
+    
+}
+
+.rectangle-kanan {
+    width: 381px; /* Lebar elemen */
+    height: 563px; /* Tinggi elemen */
+    flex-shrink: 0; /* Elemen tidak mengecil */
+    background-color: #F3F6FD; /* Warna latar belakang */
+    box-sizing: border-box; /* Padding dan border dihitung dalam ukuran */
+    
+    /* Posisi absolut dengan jarak yang sesuai */
+    position: absolute;
+    top: 1250px; /* Jarak dari atas */
+    left: 1311px; /* Jarak dari kiri */
+    right: 228px; /* Jarak dari kanan */
+    bottom: 3222px; /* Jarak dari bawah */
+  }
+
+
+  /* .image-container2 {
+        width: 616.383px;
+        height: 685.943px;
+        flex-shrink: 0;
+        border-right: 1.06px solid #000000; 
+        background: url('<path-to-image>') no-repeat center center;
+        background-size: cover;  /
+        box-sizing: border-box;
+
+  } */
+
+  .image-container2 {
+    background: linear-gradient(180deg,rgba(85, 241, 150, 0.1), rgba(32, 68, 216, 0.2));
+    width: 100%;
+    height: 570px;
+  }
+
+  .img-tangan {
+    width: 534px;
+    height: 568px;
+  }
+
+  .image-container3 {
+    background-color: #91AED8;
+    width: 100%;
+    height: 570px;
+  }
+  
+  .gantung-baju {
+    width: 734px;
+    height: 568px;
+  }
+
+  .doff{
+    position: relative;
+    color: #d4d4d4;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;;
+  }
+
+  .doff::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: green;
+    color: white;
+    transition: width 0.3s ease; 
+}
+
+
+.doff:hover::before {
+    color: white;
+    width: 100%; 
+}
+
+.doff:hover {
+    color: white;
+}
+
+.pdoff{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;;
+  }
+
+  /* .pdoff::before {
+    content: "";
+    position: absolute;
+    top: -5px; 
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: green;
+    color: white;
+    transition: width 0.3s ease;
+} */
+
+
+/* .pdoff:hover::before {
+    color: white;
+    width: 100%;
+}
+
+.pdoff:hover {
+    color: white;
+} */
+
+
+
+/* Reset and basic styling */
+
+/* Footer styling */
+.footer {
+    background-color: #FCB450;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.card-img-top1 {
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.10) 100%);
+    box-shadow: 0px 4px 2.5px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+
+  
+}
+.card-img-top2 {
+
+
+
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 10px rgb(5,46,56);
+}
+.layananprof {
+    color: #31386F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: absolute;
+
+}
+
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #000; /* Highlight color */
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;    
+}
+
+.footer p, .footer ul {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+.footer ul li a {
+    color: #000;
+    width: 385px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    right: 12px;
+
+}
+
+.footer ul li a:hover {
+    color: #fff;
+
+
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.image-footer {
+    width: 485px;
+    height: 512px;
+    flex-shrink: 0;
+    position : absolute;
+}
+.footer h2 {
+    color: #000;
+    width: 442px;
+    height: 48px;
+    flex-shrink: 0;
+    right:61px;
+    left:50px;
+} 
+.logo-footer {
+    width: 27.5px;
+    height: 112.656px;
+    flex-shrink: 0;
+    position:absolute;
+    left:159px;
+
+}
+
+
+
+/* .carduhuy {
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.10) 100%);
+    box-shadow: 0px 4px 2.5px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(20px);
+    width: 451px;
+    height: 147px;
+    flex-shrink: 0;
+    right:100px;
+    left:auto;
+    bottom:auto;
+    top:auto
+
+
+} */
+/* .card-img-top {
+    width: 93px;
+    height: 92px;
+    flex-shrink: 0; 
+} */
+    
+
+/* INDEX2 */
+
+
+
+.container-card  {
+    display: flex;
+    gap: 20px; /* Jarak antar kartu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi halaman agar penuh */
+    margin: 0;
+}
+
+.card-pilihan {
+    background-color: #007bff; /* Warna biru */
+    color: white; /* Warna teks */
+    padding: 20px;
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+    text-align: center; /* Teks di tengah */
+    width: 200px; /* Lebar kartu */
+}
+
+.card h3 {
+    margin: 0 0 10px; /* Margin bawah untuk judul */
+}
+
+.card p {
+    margin: 0; /* Menghilangkan margin untuk paragraf */
+}
+.image-container-dua {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#369386, #55F196, #0693C9);
+    
+}
+.wanita-sendiri {
+    position: absolute;
+    top: 400px;
+    right: 560px;
+    left:500px;
+
+
+}
+
+
+
+
+
+
+
+
