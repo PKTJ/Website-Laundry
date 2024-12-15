@@ -1,1 +1,3 @@
-Tugas Website Laundry, Ini tugas ngoding. 
+This website is part of an interpersonal skills course project for information systems, with the aim of learning the management of task and resource division independently. All assets, including images, icons, fonts, and other design elements used in the creation of this website, are taken from sources on the internet. The use of these assets is intended solely for learning and skill development purposes. This website is not intended for commercial purposes or public distribution.
+
+If there is a violation of copyright, we are willing to immediately delete or replace the assets in question at the request of the copyright owner.
