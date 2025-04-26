@@ -1,144 +1,261 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html, body {
-    overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -0.4px;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.4px;
 }
 
 /* Navbar */
 .navbar-custom {
-    background-color: rgba(127, 255, 212, 0.17) !important;
+  background-color: rgba(127, 255, 212, 0.17) !important;
 }
 
 .btn-custom {
-    background-color: #ffc107 !important; 
-    color: black !important;
-    border: none !important;
+  background-color: #ffc107 !important; 
+  color: black !important;
+  border: none !important;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 8%;
+  width: 0%;
+  background-color: #F6C40A;
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
 }
 
 .btn-custom:hover {
-    background-color: #e0a800 !important;
-  }
+  background-color: #e0a800 !important;
+}
 
 .btn-custom span {
-    display: inline-block;
-    transition: transform 0.3s ease;
-  }
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
 
-  .btn:hover span {
-    transform: translateX(6px);
-  }
+.btn:hover span {
+  transform: translateX(6px);
+}
 
 /* display */
 .rectangle{
-    width: 100vw;
-    height: 100vh;
-    position: relative; 
-    background-image: url('image/Group\ 89.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative; 
+  background-image: url('asset/bg/Background.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .rectangle2{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background-color: white;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+  background-color: white;
 }
 
 .rectangle3{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(180deg, rgba(85, 241, 150, 0.10) -36.76%, rgba(32, 68, 216, 0.20) 87.43%);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(85, 241, 150, 0.10) -36.76%, rgba(32, 68, 216, 0.20) 87.43%);
+}
+
+.rectangle4{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #91AED8;
+}
+
+.rectangle5{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: white;
 }
 
 /* display 1 */
 .background-dp1{
-    position: absolute;
-    object-fit: cover;
-    flex-shrink: 0;
-    object-fit: cover;
-    width: auto;
-    height: auto;
+  position: absolute;
+  object-fit: cover;
+  flex-shrink: 0;
+  object-fit: cover;
+  width: auto;
+  height: auto;
 }
 
 .title-dp1{
-    position: relative;
-    text-align: center;
-    padding-top: 23vh;
-    color: white;
+  position: relative;
+  text-align: center;
+  padding-top: 23vh;
+  color: white;
 }
 
 .text-dp1{
-    text-align: center;
-    max-width: 65%;
-    margin: 0 auto;
-    color: white;
-    font-size: calc(1rem + 0.5vw);
-    line-height: 1.5;
-    padding: 0 15px;
-}
-
-@media (max-width: 576px) {
-    .text-dp1 {
-        max-width: 95%;
-        font-size: calc(0.9rem + 0.4vw);
-    }
+  text-align: center;
+  max-width: 65%;
+  margin: 0 auto;
+  color: white;
+  font-size: calc(1rem + 0.5vw);
+  line-height: 1.5;
+  padding: 0 15px;
 }
 
 .button-container {
-    margin: 5%;
-  }
+  margin: 5%;
+}
   
-  .btn {
-    font-size: 1rem;
-    min-width: 200px;
-  }
-  
+.btn {
+  font-size: 1rem;
+  min-width: 200px;
+}
+
   /* Media queries for responsiveness */
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
     .btn {
-      font-size: 0.9rem;
-      min-width: 180px;
-    }
+    font-size: 0.9rem;
+    min-width: 180px;
   }
+}
   
-  @media (max-width: 375px) {
+@media (max-width: 375px) {
     .btn {
       font-size: 0.8rem;
       min-width: 160px;
-    }
   }
+}
 
 .women2{
-    position: absolute;
-    object-fit: contain;
-    left: 0;
-    bottom:0;
-    width: auto;
-    height: auto;
+  position: absolute;
+  object-fit: contain;
+  left: 0;
+  bottom:0;
+  width: auto;
+  height: auto;
 }
 
 .women1{
-    position: absolute;
-    object-fit: contain;
-    right: 0;
-    bottom:0;
-    width: auto;
-    height: auto;    
+  position: absolute;
+  object-fit: contain;
+  right: 0;
+  bottom:0;
+  width: auto;
+  height: auto;    
 }
 
 @media(max-width: 1200px){
-    .women1, .women2 {
-        display: none !important;
-    }
+      .women1, .women2 {
+     display: none !important;
+  }
+}
+
+/* Display 2 */
+.title-dp2{
+  position: relative;
+  text-align: center;
+  margin: 1%;
+  text-align: center;
+  padding: 0 15px;
+  color: #31386F;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #F3F6FD !important;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.card-body-custom{
+  color: #31386F !important;
+}
+
+.card-body-custom h3{
+  padding-top: 10%;
+}
+
+.card-text{
+  font-size: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.circle-icon {
+  position: absolute;
+  top: 180px; /* Position it at the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.circle-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.card-button-container {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 180px;
+  }
+  
+  .circle-icon {
+    top: 160px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .circle-icon img {
+    width: 25px;
+    height: 25px;
+  }
 }
