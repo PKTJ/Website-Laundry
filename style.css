@@ -77,7 +77,7 @@ html, body {
 
 .rectangle3{
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(85, 241, 150, 0.10) -36.76%, rgba(32, 68, 216, 0.20) 87.43%);
@@ -118,12 +118,18 @@ html, body {
 
 .text-dp1{
   text-align: center;
-  max-width: 65%;
+  max-width: 80%;
   margin: 0 auto;
   color: white;
   font-size: calc(1rem + 0.5vw);
   line-height: 1.5;
   padding: 0 15px;
+}
+
+@media (min-width: 576px) {
+  .text-dp1 {
+    max-width: 65% !important;
+  }
 }
 
 .button-container {
@@ -137,16 +143,16 @@ html, body {
 
   /* Media queries for responsiveness */
 @media (max-width: 576px) {
-    .btn {
+  .btn {
     font-size: 0.9rem;
     min-width: 180px;
   }
 }
   
 @media (max-width: 375px) {
-    .btn {
-      font-size: 0.8rem;
-      min-width: 160px;
+  .btn {
+    font-size: 0.8rem;
+    min-width: 160px;
   }
 }
 
@@ -169,8 +175,8 @@ html, body {
 }
 
 @media(max-width: 1200px){
-      .women1, .women2 {
-     display: none !important;
+  .women1, .women2 {
+    display: none !important;
   }
 }
 
@@ -214,7 +220,7 @@ html, body {
 
 .circle-icon {
   position: absolute;
-  top: 180px; /* Position it at the bottom of the image */
+  top: 180px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
@@ -257,5 +263,122 @@ html, body {
   .circle-icon img {
     width: 25px;
     height: 25px;
+  }
+}
+
+/* Display 3 */
+.title-dp3{
+  position: relative;
+  text-align: left;
+  margin: 1%;
+  padding: 2%;
+  color: #31386F;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .title-dp3 {
+    text-align: center;
+  }
+}
+
+.hand-container {
+  position: absolute;
+  object-fit: contain;
+  left: 0;
+  bottom: 0;
+}
+
+.hand-img{
+  width: 80vh;
+  height: auto;
+}
+
+.card-dp3 {
+  margin-bottom: 20vh;
+  padding-right: 18vh !important;
+}
+
+@media (max-width: 768px) {
+  .card-dp3 {
+    align-items: center !important;
+    padding-right: 0 !important;
+  }
+}
+
+.custom-card {
+  display: flex;
+  border-radius: 10px;
+  padding: 15px;
+  height: 100%;
+  border: 1px solid #FFF;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.50) 0%, rgba(217, 217, 217, 0.10) 100%);
+  box-shadow: 0px 4px 2.5px -1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(20px);
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  flex: 0 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.card-icon img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  color: #31386F;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 768px) {
+  .custom-card {
+    padding: 12px;
+  }
+  
+  .card-icon {
+    flex: 0 0 40px;
+    margin-right: 10px;
+  }
+  
+  .card-title {
+    font-size: 0.9rem;
+  }
+  
+  .card-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* Adjust card layout for different screen sizes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-dp3.col-md-7.offset-md-5 {
+    padding-left: 10px;
+  }
+  
+  .hand-container {
+    width: 25%;
   }
 }
