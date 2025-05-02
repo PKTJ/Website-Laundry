@@ -1,26 +1,77 @@
-function adjustViewport() {
+(function() {
+  var lastAppliedViewport = '';
+  var isAdjusting = false;
+  
+  function adjustViewportByDimensions() {
+    if (isAdjusting) {
+      return;
+    }
+
+    isAdjusting = true;
     var width = window.innerWidth;
     var height = window.innerHeight;
     var viewport = document.querySelector('meta[name="viewport"]');
     
-    console.log("Current dimensions:", width, "x", height); // Debug info
+    if (!viewport) {
+      console.log("Viewport meta not found");
+      isAdjusting = false;
+      return;
+    }
     
-    // iPad 9.7 and similar" (768x1024)
-    if (width >= 760 && width <= 785 && height >= 1015 && height <= 1035) {
-      viewport.setAttribute('content', 'width=1024');
-      console.log("Applied 1024 viewport for 768x1024 device");
+    var newContent;
+    // device pixel detection
+    
+    // general ipad device sizes and similar :
+    // - iPad Mini: ~768x1024
+    // - iPad (genral): ~768x1024 up to 834x1112
+    // - iPad Pro: ~834x1194 up to 1024x1366
+    
+    if (
+      // Tablet mode
+      (width >= 750 && width <= 1024 && height >= 1000 && height <= 1366) ||
+      (height >= 750 && height <= 1024 && width >= 1000 && width <= 1366) // untuk orientasi landscape
+    ) {
+      newContent = 'width=1024';
+      console.log("Dimensi tablet terdeteksi:", width, "x", height, "- menerapkan viewport tablet");
     }
-    // iPad 1 and similar" (820x1180)
-    else if (width >= 810 && width <= 830 && height >= 1170 && height <= 1190) {
-      viewport.setAttribute('content', 'width=1024');
-      console.log("Applied 1024 viewport for 820x1180 device");
+    // mobile mode
+    else if (width < 750 || height < 750) {
+      newContent = 'width=device-width, initial-scale=1';
+      console.log("Dimensi mobile terdeteksi:", width, "x", height, "- menerapkan viewport default");
     }
-    // others
+    // Desktop mode
     else {
-      viewport.setAttribute('content', 'width=device-width, initial-scale=1');
-      console.log("Applied default viewport");
+      newContent = 'width=device-width, initial-scale=1';
+      console.log("Dimensi desktop terdeteksi:", width, "x", height, "- menerapkan viewport default");
     }
+    
+    // Only change if the viewport needs to be changed
+    if (lastAppliedViewport !== newContent) {
+      viewport.setAttribute('content', newContent);
+      lastAppliedViewport = newContent;
+      console.log("Viewport diatur ke:", newContent);
+    }
+    
+    setTimeout(function() {
+      isAdjusting = false;
+    }, 300);
   }
   
-  window.addEventListener('load', adjustViewport);
-  window.addEventListener('resize', adjustViewport);
+  // run DOM
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', adjustViewportByDimensions);
+  } else {
+    adjustViewportByDimensions();
+  }
+  
+  // prevent loop
+  var resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      if (!isAdjusting) {
+        adjustViewportByDimensions();
+      }
+    }, 250);
+  });
+})();
