@@ -29,7 +29,7 @@
     if (
       // Tablet mode
       (width >= 750 && width <= 1024 && height >= 1000 && height <= 1366) ||
-      (height >= 750 && height <= 1024 && width >= 1000 && width <= 1366) // untuk orientasi landscape
+      (height >= 750 && height <= 1024 && width >= 1000 && width <= 1366)
     ) {
       newContent = 'width=1024';
       console.log("Dimensi tablet terdeteksi:", width, "x", height, "- menerapkan viewport tablet");

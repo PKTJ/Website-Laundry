@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.4px;
+  }
+
+/* Display */
+.rectangle{
+    width: 100%;
+    height: 100vh;
+    position: relative; 
+    background-image: url('/asset/bg/Background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .rectangle2{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+    background-color: white;
+  }
+  
+  .rectangle3{
+    width: 100vw;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(85, 241, 150, 0.10) -36.76%, rgba(32, 68, 216, 0.20) 87.43%);
+  }
+  
+  .rectangle4{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+    background: #91AED8;
+  }
+  
+  .rectangle5{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: white;
+  }
+
+  .rectangle6{
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background: #FCB450;
+  }
+  

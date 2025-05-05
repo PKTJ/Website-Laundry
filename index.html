@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
@@ -15,134 +16,204 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <title>Rumah Laundry</title>
   </head>
 
   <body>
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="asset/icon/Logo 1.png" alt="logo" width="120">
-            </a>
-            <!-- Toggler Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="asset/icon/Logo 1.png" alt="logo" width="120" />
+        </a>
+        <!-- Toggler Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Menu -->
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-bold active"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-bold" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-bold" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark fw-bold" href="#">Contact</a>
+            </li>
+          </ul>
+          <div>
+            <button class="btn btn-sm btn-custom fw-bold" type="button">
+              Request pickup <span>→</span>
             </button>
-            <!-- Menu -->
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-bold active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-bold" href="#">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-bold" href="#">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark fw-bold" href="#">Contact</a>
-                    </li>
-                </ul>
-                <div>
-                    <button class="btn btn-sm btn-custom fw-bold" type="button">Request pickup <span>→</span></button>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- end navbar -->
 
     <!--display 1 start-->
     <div class="rectangle">
-        <h1 class="title-dp1">Easy wash, Happy life</h1>
-        <div class="container d-flex justify-content-center align-items-center h-20">
-            <h4 class="text-dp1">dedicated to providing the best laundry solution for you. we are here to make your routine easier.
-                Because your life is too precious to be spent doing laundry</h4>
-        </div>
-            <div class="button-container d-flex justify-content-center my-4 flex-wrap gap-3">
-                <button type="button" class="btn btn-warning rounded-pill px-4 py-2 fw-bold">Request pickup</button>
-                <button type="button" class="btn btn-outline-warning rounded-pill px-4 py-2">
-                  Free of charge <span class="fw-bold">+62 111 1111</span>
-                </button>
-              </div>
-        <div>
-            <a class="women1">
-                <img src="asset/image/Women_cloth_laundry_1.png">
-            </a>
-            <a class="women2">
-                <img src="asset/image/Women_cloth_laundry2.png">
-            </a>
-        </div>
+      <h1 class="title-dp1">Easy wash, Happy life</h1>
+      <div
+        class="container d-flex justify-content-center align-items-center h-20"
+      >
+        <h4 class="text-dp1">
+          dedicated to providing the best laundry solution for you. we are here
+          to make your routine easier. Because your life is too precious to be
+          spent doing laundry
+        </h4>
+      </div>
+      <div
+        class="button-container d-flex justify-content-center my-4 flex-wrap gap-3"
+      >
+        <button
+          type="button"
+          class="btn btn-warning rounded-pill px-4 py-2 fw-bold"
+        >
+          Request pickup
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-warning rounded-pill px-4 py-2"
+        >
+          Free of charge <span class="fw-bold">+62 111 1111</span>
+        </button>
+      </div>
+      <div>
+        <a class="women1">
+          <img src="asset/image/Women_cloth_laundry_1.png" />
+        </a>
+        <a class="women2">
+          <img src="asset/image/Women_cloth_laundry2.png" />
+        </a>
+      </div>
     </div>
     <!--display 1 end-->
-    
+
     <!-- display 2 start -->
-    <div class="rectangle2"> 
-      <h2 class="title-dp2 fw-bold">We Offer Some Of The Best Services For You</h2>
-        <div class="container my-5">
-            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
-                <!-- first card -->
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/image/laundry-pictures-jfai0sp1wui4acwp 1.png" class="card-img-top">
-                    <div class="circle-icon">
-                        <img src="asset/icon/washing-machine_17381766 1.png" alt="Laundry icon">
-                      </div>
-                    <div class="card-body pb-5 card-body-custom">
-                      <h3 class="fw-bold">Laundry</h3>
-                      <p class="card-text">We provide a professional laundry service dedicated to making your clothes consistently clean, fresh-smelling, 
-                        stain-free, and cared for with attention.</p>
-                    </div>
-                    <div class="card-button-container">
-                        <button class="btn btn-warning rounded-pill px-3 fw-bold">learn more </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- second card -->
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/image/close-young-woman-hand-use-260nw-2384134655-transformed 1.png" class="card-img-top">
-                    <div class="circle-icon">
-                        <img src="asset/icon/laundry-cloth.png" alt="cloth icon">
-                      </div>
-                    <div class="card-body pb-5 card-body-custom">
-                      <h3 class="fw-bold">Single Laundry</h3>
-                      <p class="card-text">Specialized Single Garment Laundry Service for Clothes Requiring Extra Care, Enhanced Fabric Softness, 
-                        and Long-Lasting Freshness to Keep You Feeling Confident Every Day.</p>
-                    </div>
-                    <div class="card-button-container">
-                        <button class="btn btn-warning rounded-pill px-3 fw-bold">learn more </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- third card -->
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="asset/image/pewangi-pakaian-transformed 1.png" class="card-img-top">
-                    <div class="circle-icon">
-                        <img src="asset/icon/detergent_17200230 1.png" alt="Detergent icon">
-                      </div>
-                    <div class="card-body pb-5 card-body-custom">
-                      <h3 class="fw-bold">Offering Selected Products!</h3>
-                      <p class="card-text">Discover high-quality fragrances and laundry essentials carefully selected to enhance your clothing care experience.</p>
-                    </div>
-                    <div class="card-button-container">
-                        <button class="btn btn-warning rounded-pill px-3 fw-bold">learn more </button>
-                    </div>
-                  </div>
-                </div>
+    <div class="rectangle2">
+      <h2 class="title-dp2 fw-bold">
+        We Offer Some Of The Best Services For You
+      </h2>
+      <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          <!-- first card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="asset/image/laundry-pictures-jfai0sp1wui4acwp 1.png"
+                class="card-img-top"
+              />
+              <div class="circle-icon">
+                <img
+                  src="asset/icon/washing-machine_17381766 1.png"
+                  alt="Laundry icon"
+                />
+              </div>
+              <div class="card-body pb-5 card-body-custom">
+                <h3 class="fw-bold">Laundry</h3>
+                <p class="card-text">
+                  We provide a professional laundry service dedicated to making
+                  your clothes consistently clean, fresh-smelling, stain-free,
+                  and cared for with attention.
+                </p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-warning rounded-pill px-3 fw-bold">
+                  learn more
+                </button>
+              </div>
             </div>
+          </div>
+          <!-- second card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="asset/image/close-young-woman-hand-use-260nw-2384134655-transformed 1.png"
+                class="card-img-top"
+              />
+              <div class="circle-icon">
+                <img src="asset/icon/laundry-cloth.png" alt="cloth icon" />
+              </div>
+              <div class="card-body pb-5 card-body-custom">
+                <h3 class="fw-bold">Single Laundry</h3>
+                <p class="card-text">
+                  Specialized Single Garment Laundry Service for Clothes
+                  Requiring Extra Care, Enhanced Fabric Softness, and
+                  Long-Lasting Freshness to Keep You Feeling Confident Every
+                  Day.
+                </p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-warning rounded-pill px-3 fw-bold">
+                  learn more
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="asset/image/pewangi-pakaian-transformed 1.png"
+                class="card-img-top"
+              />
+              <div class="circle-icon">
+                <img
+                  src="asset/icon/detergent_17200230 1.png"
+                  alt="Detergent icon"
+                />
+              </div>
+              <div class="card-body pb-5 card-body-custom">
+                <h3 class="fw-bold">Offering Selected Products!</h3>
+                <p class="card-text">
+                  Discover high-quality fragrances and laundry essentials
+                  carefully selected to enhance your clothing care experience.
+                </p>
+              </div>
+              <div class="card-button-container">
+                <button class="btn btn-warning rounded-pill px-3 fw-bold">
+                  learn more
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- display 2 end -->
 
     <!-- display 3 start -->
     <div class="rectangle3">
-       <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
           <div class="hand-container">
-            <img src="asset/image/Group 31.png" class="hand-img">
+            <img src="asset/image/Group 31.png" class="hand-img" />
           </div>
           <div class="card-dp3 col-12 col-md-7 offset-md-5 row g-3">
             <h2 class="title-dp3">Why you should choose us?</h2>
@@ -150,11 +221,14 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 12.png" alt="quality">
+                  <img src="asset/icon/image 12.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Profesional Services</h5>
-                  <p class="card-text">Expertly remove stains, neatly fold and freshen your clothes.</p>
+                  <p class="card-text">
+                    Expertly remove stains, neatly fold and freshen your
+                    clothes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -162,11 +236,13 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 13.png" alt="quality">
+                  <img src="asset/icon/image 13.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Affordable Prices</h5>
-                  <p class="card-text">Value packs, suitable for all your laundry budgets.</p>
+                  <p class="card-text">
+                    Value packs, suitable for all your laundry budgets.
+                  </p>
                 </div>
               </div>
             </div>
@@ -174,11 +250,13 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 14.png" alt="quality">
+                  <img src="asset/icon/image 14.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Instant Delivery</h5>
-                  <p class="card-text">Express courier for nearby areas and surrounding areas.</p>
+                  <p class="card-text">
+                    Express courier for nearby areas and surrounding areas.
+                  </p>
                 </div>
               </div>
             </div>
@@ -186,11 +264,14 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 15.png" alt="quality">
+                  <img src="asset/icon/image 15.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Fast service</h5>
-                  <p class="card-text">Turbo overnight or regular 3 days-choose according to your needs.</p>
+                  <p class="card-text">
+                    Turbo overnight or regular 3 days-choose according to your
+                    needs.
+                  </p>
                 </div>
               </div>
             </div>
@@ -198,11 +279,14 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 16.png" alt="quality">
+                  <img src="asset/icon/image 16.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Quality assurance</h5>
-                  <p class="card-text">We ensure that the washing results are according to your expectations.</p>
+                  <p class="card-text">
+                    We ensure that the washing results are according to your
+                    expectations.
+                  </p>
                 </div>
               </div>
             </div>
@@ -210,30 +294,214 @@
             <div class="col-12 col-md-6">
               <div class="custom-card">
                 <div class="card-icon">
-                  <img src="asset/icon/image 17.png" alt="quality">
+                  <img src="asset/icon/image 17.png" alt="quality" />
                 </div>
                 <div class="card-content">
                   <h5 class="card-title">Environmentally friendly</h5>
-                  <p class="card-text">Use eco-friendly detergent, good for the earth and your clothes.</p>
+                  <p class="card-text">
+                    Use eco-friendly detergent, good for the earth and your
+                    clothes.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-       </div>
+      </div>
     </div>
     <!-- display 3 end -->
 
     <!-- display 4 start -->
-    <div class="rectangle4"> 
+    <div class="rectangle4">
       <h2 class="title-dp4">How our service process works</h2>
-      <img src="asset/image/hangers-img.png" class="hangers-img">
+      <img src="asset/image/hangers-img.png" class="hangers-img" />
+      <div class="process-container">
+        <!-- Tab buttons -->
+        <ul class="nav process-tabs" id="processTabs">
+          <li class="nav-item">
+            <button
+              class="nav-link active"
+              data-bs-toggle="tab"
+              data-bs-target="#dropoff"
+              type="button"
+              aria-controls="dropoff"
+              aria-selected="true"
+              id="dropoff-tab"
+            >
+              Drop-off
+            </button>
+          </li>
+          <li class="nav-item">
+            <span class="tab-divider">|</span>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              data-bs-toggle="tab"
+              data-bs-target="#pickup"
+              type="button"
+              aria-controls="pickup"
+              aria-selected="false"
+              id="pickup-tab"
+            >
+              Pickup & Drop
+            </button>
+          </li>
+        </ul>
+
+        <!-- Drop-off -->
+        <div class="laundry-process tab-content" id="processTabsContent">
+          <div class="tab-pane fade show active" id="dropoff" aria-labelledby="dropoff-tab">
+            <!-- row high -->
+            <div class="process-row-up" >
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw3.png" alt="Laundry">
+                </div>
+                <h6>Laundry process</h6>
+              </div>
+              
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-left.png">
+              </div>
+              
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw2.png" alt="Scale">
+                </div>
+                <h6>estimate cost</h6>
+              </div>
+  
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-left.png">
+              </div>
+  
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw1.png" alt="wash machine">
+                </div>
+                <h6>Order service</h6>
+              </div>
+            </div>
+
+            <!-- row middle -->
+            <div class="process-row-mid">
+              <div class="process-row">
+                <div class="arrow-vertical">
+                  <img src="asset/icon/arrow-down.png">
+                </div>
+              </div>
+            </div>
+
+            <!-- row lower -->
+             <div class="process-row-low">
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw4.png" alt="bag">
+                </div>
+                <h6>Packing</h6>
+              </div>
+
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-right.png">
+              </div>
+
+              <div class="process-item" >
+                <div class="icon-box">
+                  <img src="asset/icon/dw5.png" alt="Clean">
+                </div>
+                <h6>Enjoy</h6>
+              </div>
+             </div>
+          </div>
+
+          <!-- Pickup & drop -->
+          <div class="tab-pane fade" id="pickup" aria-labelledby="pickup-tab">
+            <!-- row high -->
+            <div class="second-process-row-up" >
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw3.png" alt="Laundry">
+                </div>
+                <h6>Laundry process</h6>
+              </div>
+              
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-left.png">
+              </div>
+              
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw7.png" alt="pickup">
+                </div>
+                <h6>Pickup</h6>
+              </div>
+  
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-left.png">
+              </div>
+  
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw6.png" alt="order">
+                </div>
+                <h6>Order service</h6>
+              </div>
+            </div>
+
+            <!-- row middle -->
+            <div class="second-process-row-mid">
+              <div class="process-row">
+                <div class="arrow-vertical">
+                  <img src="asset/icon/arrow-down.png">
+                </div>
+              </div>
+            </div>
+
+            <!-- row lower -->
+             <div class="second-process-row-low">
+              <div class="process-item">
+                <div class="icon-box">
+                  <img src="asset/icon/dw4.png" alt="bag">
+                </div>
+                <h6>Packing</h6>
+              </div>
+
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-right.png">
+              </div>
+
+              <div class="process-item" >
+                <div class="icon-box">
+                  <img src="asset/icon/dw8.png" alt="Delivery">
+                </div>
+                <h6>Delivery</h6>
+              </div>
+
+              <div class="arrow-horizontal">
+                <img src="asset/icon/arrow-right.png">
+              </div>
+
+              <div class="process-item" >
+                <div class="icon-box">
+                  <img src="asset/icon/dw5.png" alt="Clean">
+                </div>
+                <h6>Enjoy</h6>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- display 4 end -->
 
     <!-- display 5 start -->
-    <div class="rectangle5"> </div>
+    <div class="rectangle5"></div>
     <!-- display 5 end -->
+
+    <!-- display 6 start -->
+    <div class="rectangle6"></div>
+    <!-- display 6 end -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
