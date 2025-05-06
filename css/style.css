@@ -130,7 +130,6 @@
   position: relative;
   text-align: center;
   margin: 1%;
-  text-align: center;
   padding: 0 15px;
   color: #31386F;
 }
@@ -220,7 +219,6 @@
   margin: 1%;
   padding: 2%;
   color: #31386F;
-  font-weight: bold;
 }
 
 .hand-container {
@@ -360,7 +358,6 @@
   padding-left: 7%;
   padding-top: 3%;
   color: white;
-  font-weight: bold;
 }
 
 .hangers-img{
@@ -557,3 +554,127 @@
     display: none;
   }
 }
+
+/* Display 5 */
+.title-dp5{
+  position: relative;
+  text-align: center;
+  padding-top: 3%;
+  color: #31386F;
+}
+
+.testimonials-wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.testimonial-scroll {
+  display: inline-flex;
+  gap: 2%;
+  animation: scroll 25s linear infinite;
+}
+
+.testimonial-scroll:hover {
+  animation-play-state: paused;
+}
+
+.testimonial-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+  width: 450px;
+  padding: 50px 30px 30px;
+  border-radius: 40px;
+  background: #F3F6FD;
+  box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.20);
+  text-align: left;
+}
+
+.testimonial-photo-wrapper {
+  position: absolute;
+  top: -35px;
+  left: 30px;
+}
+
+.testimonial-photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-text {
+  color: #31386F;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.testimonial-desc {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.testimonial-author {
+  color: #31386F;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+/* Display 4 media query */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 576px) {
+  .testimonial-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: none !important;
+  }
+
+  .testimonial-item {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-item:nth-child(n + 4) {
+    display: none;
+  }
+
+  .testimonial-text {
+    font-size: 1rem;
+  }
+
+  .testimonial-desc {
+    font-size: 0.85rem;
+  }
+
+  .testimonial-author {
+    font-size: 1rem;
+  }
+
+  .testimonial-photo-wrapper {
+    top: -35px;
+    left: 20px;
+  }
+}
+
+/* Display 6 */
