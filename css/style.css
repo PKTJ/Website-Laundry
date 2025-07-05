@@ -678,3 +678,76 @@
 }
 
 /* Display 6 */
+.laundry-basket {
+  position: absolute;
+  top: -175px;         
+  left: 50%; 
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.laundry-basket-img {
+  height: 300px;
+  width: auto;
+}
+
+.title-dp6{
+  position: relative;
+  margin: 0;
+  color: black;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-item .icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.contact-info {
+  font-size: 16px;
+  line-height: 1.4;
+  color:white
+}
+
+.section-left, .section-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;          
+  box-sizing: border-box;
+}
+
+.section-left {
+  left: 5%;             
+  text-align: left;
+}
+
+.section-right {
+  right: 5%;             
+  text-align: right;
+}
+
+/* Display 6 Media Query */
+@media (max-width: 1024px) {
+  .laundry-basket {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-right {
+    display: none;
+  }
+}
